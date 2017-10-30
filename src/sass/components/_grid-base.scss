@@ -3,6 +3,11 @@
 \*------------------------------------*/
 
 .grid {
+    display: grid;
+    // sass-lint:disable no-misspelled-properties
+    grid-gap: 30px;
+    // sass-lint:enddisable
+
     > * {
         min-height: 230px;
     }
