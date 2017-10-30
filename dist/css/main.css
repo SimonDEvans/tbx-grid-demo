@@ -501,37 +501,43 @@ ol {
 
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/
+/*------------------------------------*    $GRID BASE
+\*------------------------------------*/
+.grid__item {
+  min-height: 230px;
+}
+
 /*------------------------------------*    $GRID 1
 \*------------------------------------*/
-.grid-1 {
+.grid--1 {
   display: grid;
   grid-gap: 30px;
 }
 
-.grid-1 header {
+.grid--1 > * {
+  min-height: 230px;
+  background-color: #f72a6c;
+}
+
+.grid--1 header {
   grid-column: 1 / 10;
 }
 
-.grid-1 aside {
+.grid--1 aside {
   grid-column: 1 / 4;
   grid-row: 2 / 4;
 }
 
-.grid-1 main {
+.grid--1 main {
   grid-column: 4 / 10;
 }
 
-.grid-1 .fourth {
+.grid--1 .fourth {
   grid-column: 4 / 7;
 }
 
-.grid-1 .fifth {
+.grid--1 .fifth {
   grid-column: 7 / 10;
-}
-
-.grid-1__item {
-  min-height: 230px;
-  background-color: #f72a6c;
 }
 
 /*# sourceMappingURL=main.css.map */
