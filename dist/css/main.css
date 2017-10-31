@@ -539,4 +539,35 @@ ol {
   grid-column: 7 / 10;
 }
 
+/*------------------------------------*    $GRID 1 FALLBACK
+\*------------------------------------*/
+.grid--1-fallback {
+  display: block;
+}
+
+.grid--1-fallback > * {
+  margin-bottom: 30px;
+}
+
+.grid--1-fallback aside {
+  float: left;
+  width: 30%;
+  min-height: 600px;
+}
+
+.grid--1-fallback main {
+  float: right;
+  width: calc(70% - 30px);
+  min-height: 340px;
+}
+
+.grid--1-fallback .fourth {
+  float: right;
+  width: calc(70% - 30px);
+}
+
+.grid--1-fallback .fifth {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

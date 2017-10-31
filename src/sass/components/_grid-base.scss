@@ -2,10 +2,12 @@
     $GRID BASE
 \*------------------------------------*/
 
+$grid-gap: 30px;
+
 .grid {
     display: grid;
     // sass-lint:disable no-misspelled-properties
-    grid-gap: 30px;
+    grid-gap: $grid-gap;
     // sass-lint:enddisable
 
     > * {

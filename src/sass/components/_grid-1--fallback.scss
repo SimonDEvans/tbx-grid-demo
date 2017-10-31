@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $GRID 1 FALLBACK
+\*------------------------------------*/
+
+.grid--1-fallback {
+    display: block;
+
+    > * {
+        margin-bottom: $grid-gap;
+    }
+
+    aside {
+        float: left;
+        width: 30%;
+        min-height: 600px;
+    }
+
+    main {
+        float: right;
+        width: calc(70% - 30px);
+        min-height: 340px;
+    }
+
+    .fourth {
+        float: right;
+        width: calc(70% - 30px);
+    }
+
+    .fifth {
+        display: none;
+    }
+}
