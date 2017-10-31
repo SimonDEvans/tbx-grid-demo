@@ -6,8 +6,8 @@
     grid-template-columns: repeat(4, 1fr);
 
     .specially-placed {
+        background-color: #2bacf7;
         grid-column: 2 / 4;
         grid-row: 2 / 3;
-        background-color: #2bacf7;
     }
 }
