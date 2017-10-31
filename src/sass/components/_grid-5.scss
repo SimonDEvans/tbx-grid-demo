@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $GRID 5 (NAMED TRACKS)
+\*------------------------------------*/
+
+.grid--5 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    '.......    header      header'
+    'sidebar    .......     content-1'
+    'content-2  content-2   content-2';
+
+    .header {
+        grid-area: header;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content-1 {
+        grid-area: content-1;
+    }
+
+    .content-2 {
+        grid-area: content-2;
+    }
+
+    > * {
+        padding: 30px;
+        color: #fff;
+    }
+}

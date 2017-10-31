@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $GRID 4 (AUTO PLACEMENT)
+\*------------------------------------*/
+
+.grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+
+    .specially-placed {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        background-color: #2bacf7;
+    }
+}

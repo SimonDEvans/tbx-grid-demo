@@ -508,6 +508,10 @@ ol li h3 {
   margin-bottom: 10px;
 }
 
+a {
+  color: #e40049;
+}
+
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*    $GRID BASE
@@ -587,6 +591,46 @@ ol li h3 {
 \*------------------------------------*/
 .grid--3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/*------------------------------------*    $GRID 4 (AUTO PLACEMENT)
+\*------------------------------------*/
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--4 .specially-placed {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color: #2bacf7;
+}
+
+/*------------------------------------*    $GRID 5 (NAMED TRACKS)
+\*------------------------------------*/
+.grid--5 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: '.......    header      header' 'sidebar    .......     content-1' 'content-2  content-2   content-2';
+}
+
+.grid--5 .header {
+  grid-area: header;
+}
+
+.grid--5 .sidebar {
+  grid-area: sidebar;
+}
+
+.grid--5 .content-1 {
+  grid-area: content-1;
+}
+
+.grid--5 .content-2 {
+  grid-area: content-2;
+}
+
+.grid--5 > * {
+  padding: 30px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
