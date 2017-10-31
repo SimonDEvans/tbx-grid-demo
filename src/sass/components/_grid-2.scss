@@ -1,0 +1,8 @@
+/*------------------------------------*\
+    $GRID 2 (FR UNIT)
+    https://css-tricks.com/introduction-fr-css-unit/
+\*------------------------------------*/
+
+.grid--2 {
+    grid-template-columns: repeat(4, 1fr);
+}

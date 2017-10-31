@@ -1,0 +1,7 @@
+/*------------------------------------*\
+    $GRID 3 (MINMAX)
+\*------------------------------------*/
+
+.grid--3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

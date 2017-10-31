@@ -510,14 +510,11 @@ ol {
 
 .grid > * {
   min-height: 230px;
+  background-color: #f72a6c;
 }
 
 /*------------------------------------*    $GRID 1
 \*------------------------------------*/
-.grid--1 > * {
-  background-color: #f72a6c;
-}
-
 .grid--1 header {
   grid-column: 1 / 10;
 }
@@ -568,6 +565,19 @@ ol {
 
 .grid--1-fallback .fifth {
   display: none;
+}
+
+/*------------------------------------*    $GRID 2 (FR UNIT)
+    https://css-tricks.com/introduction-fr-css-unit/
+\*------------------------------------*/
+.grid--2 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*------------------------------------*    $GRID 3 (MINMAX)
+\*------------------------------------*/
+.grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
 }
 
 /*# sourceMappingURL=main.css.map */
